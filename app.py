@@ -6,7 +6,7 @@ import base64
 
 app = Flask(__name__)
 CORS(app)
-ocr = ddddocr.DdddOcr(show_ad=False)
+ocr = ddddocr.DdddOcr()
 
 @app.route('/ocr', methods=['POST'])
 def do_ocr():
